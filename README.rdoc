@@ -13,4 +13,5 @@ git clone https://github.com/CarlosRoque/use-devise-to-create-a-user-account-on-
 then run 
 
 bundler install
+
 rake db:migrate
