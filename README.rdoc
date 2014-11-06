@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example application showing how to set up 
+Devise in rails 4 to Create and assign a new Company to a User
+using the registration form.
 
-Things you may want to cover:
+It also shows how to update that information using the registration edit form
 
-* Ruby version
+To view the example clone this to your computer using 
 
-* System dependencies
+git clone https://github.com/CarlosRoque/use-devise-to-create-a-user-account-on-registration.git example
 
-* Configuration
+then run 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+bundler install
+rake db:migrate
