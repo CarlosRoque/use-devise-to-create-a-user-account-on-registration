@@ -7,7 +7,9 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
-
+<!--  We add this to the Registration Edit form so we can Update company information 
+	You can add more company fields here
+ -->
  <div class="field">
    <%= f.fields_for :company do |builder| %>
     <%= builder.label :company_name %><br />

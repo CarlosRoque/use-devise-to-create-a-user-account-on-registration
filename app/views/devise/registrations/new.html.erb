@@ -1,5 +1,8 @@
 <h2>Sign up</h2>
+<!-- We need to build a company first so we can use it in our form builder -->
 <% resource.build_company %>
+
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
@@ -7,6 +10,9 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
+  <!--  We add this to the Registration form so we can create a new company 
+	You can add more company fields here
+ -->
  <div class="field">
    <%= f.fields_for :company do |builder| %>
     <%= builder.label :company_name %><br />
